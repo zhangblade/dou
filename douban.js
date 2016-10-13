@@ -1,0 +1,1 @@
+(function(){var a=angular.module("douban",["ngRoute","douban.detailModule","douban.listModule","douban.SearchModule","douban.PageModule"]);a.config(["$routeProvider",function(b){b.otherwise({redirectTo:"/in_theaters"})}]);a.constant("appConfig",{listUrl:"https://api.douban.com/v2/movie/",detaiUrl:"https://api.douban.com/v2/movie/subject/",pageCount:5})})();

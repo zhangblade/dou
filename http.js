@@ -1,0 +1,1 @@
+(function(){var a=angular.module("douban.service",[]);a.service("jsonpService",[function(){this.jsonp=function(c,g,d){var e="?";for(key in g){e+=key+"="+g[key]+"&&"}var f="my_callback"+new Date().getTime();e+="callback"+"="+f;window[f]=function(h){d(h);document.body.removeChild(b)};var b=document.createElement("script");b.src=c+e;document.body.appendChild(b)}}])})();
